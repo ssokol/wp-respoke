@@ -69,13 +69,6 @@
 			<input class="widefat" id="<?php echo $this->get_field_id('friendlyName'); ?>" name="<?php echo $this->get_field_name('friendlyName'); ?>" type="text" value="<?php echo $friendlyName; ?>" />
 			</p>
 
-<!--
-			<p>
-			<label for="<?php echo $this->get_field_id('authorRoleId'); ?>"><?php _e('Author Role ID:', 'wp_widget_plugin'); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('authorRoleId'); ?>" name="<?php echo $this->get_field_name('authorRoleId'); ?>" type="text" value="<?php echo $authorRoleId; ?>" />
-			</p>
--->
-
 			<p>
 			<label for="<?php echo $this->get_field_id('visitorRoleId'); ?>"><?php _e('Visitor Role ID:', 'wp_widget_plugin'); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id('visitorRoleId'); ?>" name="<?php echo $this->get_field_name('visitorRoleId'); ?>" type="text" value="<?php echo $visitorRoleId; ?>" />
@@ -112,7 +105,6 @@
 	
 			// load several scripts and some CSS for use in the widget	
 			wp_enqueue_script( 'jquery' );
-			//wp_enqueue_script( 'respoke-client', 'https://cdn-st.respoke.io/respoke.min.js');
 			wp_enqueue_script( 'respoke-client', 'https://cdn.respoke.io/respoke.min.js');
 			wp_enqueue_script( 'respoke-visitor', MY_PLUGIN_PATH . '/js/visitor.js');
 			wp_enqueue_script( 'jquery-custombox', MY_PLUGIN_PATH . '/js/custombox.min.js');
