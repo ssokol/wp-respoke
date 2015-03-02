@@ -105,7 +105,8 @@
 	
 			// load several scripts and some CSS for use in the widget	
 			wp_enqueue_script( 'jquery' );
-			wp_enqueue_script( 'respoke-client', 'https://cdn.respoke.io/respoke.min.js');
+			//wp_enqueue_script( 'respoke-client', 'https://cdn.respoke.io/respoke.min.js');
+			wp_enqueue_script( 'respoke-client', 'https://43a32869.ngrok.com/javascript/transporter/respoke.min.js');
 			wp_enqueue_script( 'respoke-visitor', MY_PLUGIN_PATH . '/js/visitor.js');
 			wp_enqueue_script( 'jquery-custombox', MY_PLUGIN_PATH . '/js/custombox.min.js');
 			wp_enqueue_script( 'respoke-md5', MY_PLUGIN_PATH . '/js/md5.js');
