@@ -18,6 +18,8 @@
  
 var wpr = (function($) {
 
+    respoke.log.setLevel = "debug";
+    
 	// create the Respoke client object
 	var client = respoke.createClient({
 		appId: wpData.appId,
