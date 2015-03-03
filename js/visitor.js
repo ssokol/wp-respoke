@@ -65,9 +65,14 @@ var wpr = (function($) {
 				call = null;
 			});
 			call.listen('connect', function(evt) {
-				$("#respoke-chat-conversation").append(evt.element);
+				$(".header-image img").replaceWith(evt.element);
 			});
-			call.answer();
+			call.answer({
+			    constraints: {
+			        audio: false,
+			        video: false
+			    }
+			});
 		});
 		
 		// join the visitors group
