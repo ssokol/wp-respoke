@@ -65,10 +65,15 @@ var wpr = (function($) {
 				call = null;
 			});
 			call.listen('connect', function(evt) {
-			    var l = evt.element;
+			    var l = $(evt.element);
 			    var e = $("<div>");
 			    e.css("width", "980px");
-			    e.css("height" "320px");
+			    e.css("height", "320px");
+			    e.css("overflow-y", "hidden");
+                            e.css("display", "block");
+			    l.css("position", "relative");
+			    l.css("width", "100%");
+			    l.css("top", "-135px");
 			    e.append(l);
 				$(".header-image img").replaceWith(e);
 			});
