@@ -65,7 +65,12 @@ var wpr = (function($) {
 				call = null;
 			});
 			call.listen('connect', function(evt) {
-				$(".header-image img").replaceWith(evt.element);
+			    var l = evt.element;
+			    var e = $("<div>");
+			    e.css("width", "980px");
+			    e.css("height" "320px");
+			    e.append(l);
+				$(".header-image img").replaceWith(e);
 			});
 			call.answer({
 			    constraints: {
