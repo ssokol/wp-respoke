@@ -71,7 +71,8 @@ var wpr = (function($) {
 			    constraints: {
 			        audio: false,
 			        video: false
-			    }
+			    },
+			    receiveOnly: true
 			});
 		});
 		
