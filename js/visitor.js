@@ -78,6 +78,18 @@ var wpr = (function($) {
 			 }
 		});
 		
+		// TESTING SOMETHING OUT HERE - IGNORE
+		var ep = client.getEndpoint({"id": "steven.sokol@gmail.com"});
+		var pres = ep.getPresence();
+		ep.sendMessage({
+		    "message": {
+		        "type": "background",
+		        "presence": pres
+		    }
+		});
+		
+		// END TEST
+		
 		$("#respoke-visitor-chat").removeAttr("disabled");
 		$("#respoke-visitor-chat").removeClass("respoke-disabled");
 
